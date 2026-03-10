@@ -1,0 +1,122 @@
+{
+  "events": [
+    {
+      "id": 1,
+      "title": "新手訓練營",
+      "date": "5月20日",
+      "description": "免費新手體驗訓練課程"
+    },
+    {
+      "id": 2,
+      "title": "燃脂挑戰賽",
+      "date": "6月1日",
+      "description": "為期六週的燃脂計畫"
+    },
+    {
+      "id": 3,
+      "title": "會員推薦活動",
+      "date": "6月10日",
+      "description": "邀請好友入會即可獲得點數"
+    }
+  ],
+  "trainers": [
+    {
+      "id": "ryan",
+      "name": "Ryan",
+      "specialty": "肌力訓練",
+      "certification": "NASM",
+      "philosophy": "穩定的訓練習慣才會帶來改變，我重視基礎動作與循序漸進。"
+    },
+    {
+      "id": "ashley",
+      "name": "Ashley",
+      "specialty": "瑜珈訓練",
+      "certification": "RYT200",
+      "philosophy": "呼吸與動作應該相互配合，建立力量、平衡與穩定。"
+    },
+    {
+      "id": "david",
+      "name": "David",
+      "specialty": "減脂教練",
+      "certification": "ACE",
+      "philosophy": "可持續的習慣勝過短期捷徑，我們要建立能長久維持的節奏。"
+    }
+  ],
+  "classes": [
+    {
+      "id": 1,
+      "className": "肌力訓練",
+      "trainer": "Ryan",
+      "time": "10:00"
+    },
+    {
+      "id": 2,
+      "className": "瑜珈",
+      "trainer": "Ashley",
+      "time": "14:00"
+    },
+    {
+      "id": 3,
+      "className": "高強度間歇訓練",
+      "trainer": "David",
+      "time": "19:00"
+    }
+  ],
+  "students": [
+    {
+      "id": 1,
+      "name": "Kevin",
+      "goal": "增肌",
+      "trainer": "Ryan"
+    },
+    {
+      "id": 2,
+      "name": "Jenny",
+      "goal": "減脂",
+      "trainer": "Ryan"
+    },
+    {
+      "id": 3,
+      "name": "Alex",
+      "goal": "體能提升",
+      "trainer": "Ryan"
+    }
+  ],
+  "trainerSchedule": [
+    {
+      "id": 1,
+      "time": "09:00",
+      "className": "肌力訓練",
+      "student": "Kevin"
+    },
+    {
+      "id": 2,
+      "time": "11:00",
+      "className": "私人教練課",
+      "student": "Jenny"
+    },
+    {
+      "id": 3,
+      "time": "18:00",
+      "className": "高強度間歇訓練",
+      "student": "Alex"
+    }
+  ],
+  "resources": [
+    {
+      "id": 1,
+      "name": "肌力訓練指南",
+      "type": "PDF 檔"
+    },
+    {
+      "id": 2,
+      "name": "高強度間歇課表計畫",
+      "type": "文件"
+    },
+    {
+      "id": 3,
+      "name": "教學示範影片",
+      "type": "影片"
+    }
+  ]
+}
