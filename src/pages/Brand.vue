@@ -1,19 +1,39 @@
+<script setup>
+const getImg = (name) => {
+  return new URL(`/src/assets/images/brand/${name}.jpg`, import.meta.url).href
+}
+</script>
+
 <template>
   <section class="grid gap-6 lg:grid-cols-2">
     <article class="rounded-2xl border border-slate-200 bg-white p-6 shadow-card">
-      <h2 class="text-2xl font-semibold text-slate-900">品牌故事</h2>
+      <h2 class="text-2xl font-semibold text-slate-900">💪 SixFit 健身｜品牌故事</h2>
       <p class="mt-4 leading-7 text-slate-700">
-        XX Fitness 創立的初衷，是打造一個友善且專業的訓練環境，讓每位會員都能安心開始健身旅程。
+        SixFit 健身誕生於一個很簡單的想法：
+        如果一家健身房真的做到最好，那它自然會成為最大的。
+        我們相信，「最好」不是一句宣傳口號，而是每天在場館裡被看見、被體驗的細節。
+        從專業教練的訓練規劃，到精心挑選的器材設備，再到寬敞舒適的運動空間，每一個環節都代表 SixFit 對品質的堅持。
+        <br>
+        許多人走進健身房，是為了改變自己的身體；
+        但在 SixFit，我們更希望提供的是一個能夠長期陪伴訓練的環境。
+        無論是剛開始接觸健身的新手，還是追求突破的進階訓練者，都能在這裡找到適合自己的節奏與方法。
+        <br>
+        因此，SixFit 的品牌口號是：
+        「因為最好，所以最大。」 🏋️
+        <br>
+        這句話代表的並不只是場館的規模，而是一種理念——
+        當服務、設備與訓練品質都做到最好，自然會吸引更多人加入。
+        SixFit 希望打造的不只是一間健身房，而是一個讓人願意持續回來訓練、成長與突破的地方。 ✨
+        <br>
+        在這裡，每一次訓練，都是向更好的自己前進的一步。
       </p>
       <p class="mt-3 leading-7 text-slate-700">
-        我們相信健身不只是增強體能，更是建立長期健康生活方式的重要一步。
       </p>
     </article>
 
     <article
-      class="flex min-h-72 items-center justify-center rounded-2xl border border-dashed border-slate-300 bg-gradient-to-br from-slate-50 to-slate-100 p-6 text-center text-slate-500"
-    >
-      圖片預留區
+      class="flex min-h-72 items-center justify-center rounded-2xl border border-dashed border-slate-300 bg-gradient-to-br from-slate-50 to-slate-100 p-6 text-center text-slate-500">
+      <img :src="getImg('brand')" alt="brand" />
     </article>
   </section>
 </template>

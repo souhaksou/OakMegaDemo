@@ -1,45 +1,26 @@
 import { createRouter, createWebHistory } from 'vue-router'
-import DashboardLayout from '../layout/DashboardLayout.vue'
-import Home from '../pages/Home.vue'
-import Brand from '../pages/Brand.vue'
-import Events from '../pages/Events.vue'
-import EventDetail from '../pages/EventDetail.vue'
-import Trainers from '../pages/Trainers.vue'
-import TrainerProfile from '../pages/TrainerProfile.vue'
-import Register from '../pages/Register.vue'
-import VisitBooking from '../pages/VisitBooking.vue'
-import Location from '../pages/Location.vue'
-import Locations from '../pages/Locations.vue'
-import LocationRegion from '../pages/LocationRegion.vue'
-import ClassBooking from '../pages/ClassBooking.vue'
-import TrainerSchedule from '../pages/trainer/Schedule.vue'
-import Students from '../pages/trainer/Students.vue'
-import StudentRecord from '../pages/trainer/StudentRecord.vue'
-import ClassManagement from '../pages/trainer/ClassManagement.vue'
-import Resources from '../pages/trainer/Resources.vue'
 
 const routes = [
   {
     path: '/',
-    component: DashboardLayout,
+    component: () => import('../layout/DashboardLayout.vue'),
     children: [
-      { path: '', name: 'home', component: Home },
-      { path: 'brand', name: 'brand', component: Brand },
-      { path: 'events', name: 'events', component: Events },
-      { path: 'events/:id', name: 'event-detail', component: EventDetail },
-      { path: 'trainers', name: 'trainers', component: Trainers },
-      { path: 'trainers/:id', name: 'trainer-profile', component: TrainerProfile },
-      { path: 'register', name: 'register', component: Register },
-      { path: 'visit-booking', name: 'visit-booking', component: VisitBooking },
-      { path: 'location', name: 'location', component: Location },
-      { path: 'locations', name: 'locations', component: Locations },
-      { path: 'locations/:region', name: 'location-region', component: LocationRegion },
-      { path: 'class-booking', name: 'class-booking', component: ClassBooking },
-      { path: 'trainer/schedule', name: 'trainer-schedule', component: TrainerSchedule },
-      { path: 'trainer/students', name: 'trainer-students', component: Students },
-      { path: 'trainer/student-record', name: 'trainer-student-record', component: StudentRecord },
-      { path: 'trainer/class-management', name: 'trainer-class-management', component: ClassManagement },
-      { path: 'trainer/resources', name: 'trainer-resources', component: Resources },
+      { path: '', name: 'home', component: () => import('../pages/Home.vue') },
+      { path: 'brand', name: 'brand', component: () => import('../pages/Brand.vue') },
+      { path: 'events', name: 'events', component: () => import('../pages/Events.vue') },
+      { path: 'events/:id', name: 'event-detail', component: () => import('../pages/EventDetail.vue') },
+      { path: 'trainers', name: 'trainers', component: () => import('../pages/Trainers.vue') },
+      { path: 'trainers/:id', name: 'trainer-profile', component: () => import('../pages/TrainerProfile.vue') },
+      { path: 'register', name: 'register', component: () => import('../pages/Register.vue') },
+      { path: 'visit-booking', name: 'visit-booking', component: () => import('../pages/VisitBooking.vue') },
+      { path: 'locations', name: 'locations', component: () => import('../pages/Locations.vue') },
+      { path: 'locations/:region', name: 'location-region', component: () => import('../pages/LocationRegion.vue') },
+      { path: 'class-booking', name: 'class-booking', component: () => import('../pages/ClassBooking.vue') },
+      { path: 'trainer/schedule', name: 'trainer-schedule', component: () => import('../pages/trainer/Schedule.vue') },
+      { path: 'trainer/students', name: 'trainer-students', component: () => import('../pages/trainer/Students.vue') },
+      { path: 'trainer/student-record', name: 'trainer-student-record', component: () => import('../pages/trainer/StudentRecord.vue') },
+      { path: 'trainer/class-management', name: 'trainer-class-management', component: () => import('../pages/trainer/ClassManagement.vue') },
+      { path: 'trainer/resources', name: 'trainer-resources', component: () => import('../pages/trainer/Resources.vue') },
     ],
   },
 ]
@@ -53,3 +34,4 @@ const router = createRouter({
 })
 
 export default router
+

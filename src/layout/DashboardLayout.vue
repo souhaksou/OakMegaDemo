@@ -9,7 +9,7 @@ const isSidebarOpen = ref(false)
 
 const pageTitle = computed(() => {
   const titles = {
-    home: '儀表板',
+    home: '首頁',
     brand: '品牌故事',
     events: '活動專區',
     'event-detail': '活動詳情',
@@ -27,7 +27,7 @@ const pageTitle = computed(() => {
     'trainer-class-management': '課程管理',
     'trainer-resources': '教練資源',
   }
-  return titles[route.name] || 'XX Fitness 客戶管理'
+  return titles[route.name] || 'Sixfit 健身'
 })
 </script>
 

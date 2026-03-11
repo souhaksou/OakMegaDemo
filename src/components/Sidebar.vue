@@ -9,7 +9,7 @@ const props = defineProps({
 defineEmits(['close'])
 
 const mainMenu = [
-  { label: '儀表板', to: '/' },
+  { label: '首頁', to: '/' },
   { label: '品牌故事', to: '/brand' },
   { label: '活動專區', to: '/events' },
   { label: '教練團隊', to: '/trainers' },
@@ -29,31 +29,20 @@ const trainerTools = [
 </script>
 
 <template>
-  <div
-    v-if="props.isOpen"
-    class="fixed inset-0 z-30 bg-slate-900/40 md:hidden"
-    @click="$emit('close')"
-  />
-  <aside
-    :class="[
-      'fixed inset-y-0 left-0 z-40 w-72 overflow-y-auto border-r border-slate-200 bg-white p-5 shadow-xl transition-transform md:static md:translate-x-0 md:shadow-none',
-      props.isOpen ? 'translate-x-0' : '-translate-x-full',
-    ]"
-  >
+  <div v-if="props.isOpen" class="fixed inset-0 z-30 bg-slate-900/40 md:hidden" @click="$emit('close')" />
+  <aside :class="[
+    'fixed inset-y-0 left-0 z-40 w-72 overflow-y-auto border-r border-slate-200 bg-white p-5 shadow-xl transition-transform md:static md:translate-x-0 md:shadow-none',
+    props.isOpen ? 'translate-x-0' : '-translate-x-full',
+  ]">
     <div class="mb-6 rounded-2xl bg-gradient-to-r from-cyan-700 to-cyan-900 p-4 text-white">
-      <p class="text-xs uppercase tracking-wider text-cyan-100">LINE 選單入口</p>
-      <h2 class="text-lg font-semibold">XX Fitness 客戶管理</h2>
+      <p class="text-xs uppercase tracking-wider text-cyan-100">歡迎光臨</p>
+      <h2 class="text-lg font-semibold">SixFit 健身</h2>
     </div>
 
     <nav class="space-y-1">
-      <RouterLink
-        v-for="item in mainMenu"
-        :key="item.to"
-        :to="item.to"
+      <RouterLink v-for="item in mainMenu" :key="item.to" :to="item.to"
         class="block rounded-lg px-3 py-2 text-sm font-medium text-slate-700 transition hover:bg-slate-100 hover:text-slate-900"
-        active-class="bg-cyan-50 text-cyan-900"
-        @click="$emit('close')"
-      >
+        active-class="bg-cyan-50 text-cyan-900" @click="$emit('close')">
         {{ item.label }}
       </RouterLink>
     </nav>
@@ -61,14 +50,9 @@ const trainerTools = [
     <div class="my-5 border-t border-slate-200 pt-4">
       <p class="px-3 text-xs font-semibold uppercase tracking-wider text-slate-400">教練工具</p>
       <nav class="mt-2 space-y-1">
-        <RouterLink
-          v-for="item in trainerTools"
-          :key="item.to"
-          :to="item.to"
+        <RouterLink v-for="item in trainerTools" :key="item.to" :to="item.to"
           class="block rounded-lg px-3 py-2 text-sm font-medium text-slate-700 transition hover:bg-slate-100 hover:text-slate-900"
-          active-class="bg-orange-50 text-orange-700"
-          @click="$emit('close')"
-        >
+          active-class="bg-orange-50 text-orange-700" @click="$emit('close')">
           {{ item.label }}
         </RouterLink>
       </nav>

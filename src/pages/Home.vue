@@ -13,19 +13,13 @@ const stats = [
 <template>
   <section class="space-y-6">
     <div class="rounded-3xl bg-gradient-to-r from-cyan-800 to-cyan-600 p-6 text-white shadow-card">
-      <p class="text-sm uppercase tracking-wider text-cyan-100">健身房名稱</p>
-      <h2 class="mt-2 text-3xl font-bold">XX Fitness</h2>
-      <p class="mt-2 text-cyan-100">練得更好，活得更強</p>
+      <p class="text-sm uppercase tracking-wider text-cyan-100">💪 💪 💪</p>
+      <h2 class="mt-2 text-3xl font-bold">SixFit 健身</h2>
+      <p class="mt-2 text-cyan-100">「因為最好，所以最大」</p>
     </div>
 
     <div class="grid gap-4 md:grid-cols-2 xl:grid-cols-4">
-      <Card
-        v-for="item in stats"
-        :key="item.title"
-        :title="item.title"
-        :value="item.value"
-        :subtitle="item.subtitle"
-      />
+      <Card v-for="item in stats" :key="item.title" :title="item.title" :value="item.value" :subtitle="item.subtitle" />
     </div>
   </section>
 </template>
