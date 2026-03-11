@@ -2,7 +2,7 @@
 defineProps({
   title: {
     type: String,
-    default: 'XX Fitness 後台',
+    default: 'XX Fitness 客戶管理',
   },
 })
 

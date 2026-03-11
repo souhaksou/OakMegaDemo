@@ -11,11 +11,11 @@ defineEmits(['close'])
 const mainMenu = [
   { label: '儀表板', to: '/' },
   { label: '品牌故事', to: '/brand' },
-  { label: '活動', to: '/events' },
+  { label: '活動專區', to: '/events' },
   { label: '教練團隊', to: '/trainers' },
   { label: '會員註冊', to: '/register' },
   { label: '參觀預約', to: '/visit-booking' },
-  { label: '據點資訊', to: '/location' },
+  { label: '據點列表', to: '/locations' },
   { label: '課程預約', to: '/class-booking' },
 ]
 
@@ -42,7 +42,7 @@ const trainerTools = [
   >
     <div class="mb-6 rounded-2xl bg-gradient-to-r from-cyan-700 to-cyan-900 p-4 text-white">
       <p class="text-xs uppercase tracking-wider text-cyan-100">LINE 選單入口</p>
-      <h2 class="text-lg font-semibold">XX Fitness 後台</h2>
+      <h2 class="text-lg font-semibold">XX Fitness 客戶管理</h2>
     </div>
 
     <nav class="space-y-1">

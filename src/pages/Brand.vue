@@ -1,12 +1,12 @@
 <template>
   <section class="grid gap-6 lg:grid-cols-2">
     <article class="rounded-2xl border border-slate-200 bg-white p-6 shadow-card">
-      <h2 class="text-2xl font-semibold text-slate-900">我們的故事</h2>
+      <h2 class="text-2xl font-semibold text-slate-900">品牌故事</h2>
       <p class="mt-4 leading-7 text-slate-700">
-        XX Fitness 成立的初衷，是打造一個友善且專業的訓練環境，讓每位會員都能安心開始健身旅程。
+        XX Fitness 創立的初衷，是打造一個友善且專業的訓練環境，讓每位會員都能安心開始健身旅程。
       </p>
       <p class="mt-3 leading-7 text-slate-700">
-        我們相信健身不只是提升體能，更是培養健康生活型態的重要過程。
+        我們相信健身不只是增強體能，更是建立長期健康生活方式的重要一步。
       </p>
     </article>
 

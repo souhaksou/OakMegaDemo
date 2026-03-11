@@ -11,12 +11,13 @@ const pageTitle = computed(() => {
   const titles = {
     home: '儀表板',
     brand: '品牌故事',
-    events: '活動',
+    events: '活動專區',
     trainers: '教練團隊',
     'trainer-profile': '教練檔案',
     register: '會員註冊',
     'visit-booking': '參觀預約',
-    location: '據點資訊',
+    location: '場館資訊',
+    locations: '據點列表',
     'class-booking': '課程預約',
     'trainer-schedule': '教練課表',
     'trainer-students': '學生名單',
@@ -24,7 +25,7 @@ const pageTitle = computed(() => {
     'trainer-class-management': '課程管理',
     'trainer-resources': '教練資源',
   }
-  return titles[route.name] || 'XX Fitness 後台'
+  return titles[route.name] || 'XX Fitness 客戶管理'
 })
 </script>
 

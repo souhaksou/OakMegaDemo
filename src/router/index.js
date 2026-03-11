@@ -8,6 +8,7 @@ import TrainerProfile from '../pages/TrainerProfile.vue'
 import Register from '../pages/Register.vue'
 import VisitBooking from '../pages/VisitBooking.vue'
 import Location from '../pages/Location.vue'
+import Locations from '../pages/Locations.vue'
 import ClassBooking from '../pages/ClassBooking.vue'
 import TrainerSchedule from '../pages/trainer/Schedule.vue'
 import Students from '../pages/trainer/Students.vue'
@@ -28,6 +29,7 @@ const routes = [
       { path: 'register', name: 'register', component: Register },
       { path: 'visit-booking', name: 'visit-booking', component: VisitBooking },
       { path: 'location', name: 'location', component: Location },
+      { path: 'locations', name: 'locations', component: Locations },
       { path: 'class-booking', name: 'class-booking', component: ClassBooking },
       { path: 'trainer/schedule', name: 'trainer-schedule', component: TrainerSchedule },
       { path: 'trainer/students', name: 'trainer-students', component: Students },

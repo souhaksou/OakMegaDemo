@@ -4,7 +4,6 @@ import { useRoute } from 'vue-router'
 import data from '../data/mockData.json'
 
 const route = useRoute()
-
 const trainer = computed(() => data.trainers.find((item) => item.id === route.params.id))
 </script>
 
@@ -18,12 +17,12 @@ const trainer = computed(() => data.trainers.find((item) => item.id === route.pa
       </div>
       <div class="space-y-3">
         <h2 class="text-3xl font-bold text-slate-900">{{ trainer.name }}</h2>
-        <p class="text-slate-700"><span class="font-semibold">專長：</span>{{ trainer.specialty }}</p>
+        <p class="text-slate-700"><span class="font-semibold">專長：</span> {{ trainer.specialty }}</p>
         <p class="text-slate-700">
-          <span class="font-semibold">證照：</span>{{ trainer.certification }}
+          <span class="font-semibold">證照：</span> {{ trainer.certification }}
         </p>
         <p class="text-slate-700">
-          <span class="font-semibold">教學理念：</span>{{ trainer.philosophy }}
+          <span class="font-semibold">教學理念：</span> {{ trainer.philosophy }}
         </p>
       </div>
     </div>

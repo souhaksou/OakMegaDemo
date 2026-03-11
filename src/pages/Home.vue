@@ -3,10 +3,10 @@ import Card from '../components/Card.vue'
 import data from '../data/mockData.json'
 
 const stats = [
-  { title: '會員總數', value: 320, subtitle: 'CRM 已註冊會員總量' },
-  { title: '近期課程', value: data.classes.length, subtitle: '今日與近期的課程場次' },
-  { title: '在職教練', value: data.trainers.length, subtitle: '目前可排課的教練人數' },
-  { title: '近期活動', value: data.events.length, subtitle: '會員活動與行銷檔期' },
+  { title: '會員總數', value: 320, subtitle: 'CRM 已註冊會員總數' },
+  { title: '近期課程', value: data.classes.length, subtitle: '今日與近期課程場次' },
+  { title: '在職教練', value: data.trainers.length, subtitle: '目前可安排課程的教練數' },
+  { title: '活動檔期', value: data.events.length, subtitle: '近期會員活動與行銷檔期' },
 ]
 </script>
 

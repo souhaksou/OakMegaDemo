@@ -1,19 +1,31 @@
+<script setup>
+import DataTable from '../../components/DataTable.vue'
+
+const columns = [
+  { key: 'date', label: '日期' },
+  { key: 'weight', label: '體重' },
+  { key: 'note', label: '紀錄' },
+]
+
+const records = [
+  { id: 1, date: '5月1日', weight: '75kg', note: '初次評估' },
+  { id: 2, date: '5月5日', weight: '74.8kg', note: '肌力基準訓練' },
+  { id: 3, date: '5月10日', weight: '74kg', note: '耐力明顯提升' },
+  { id: 4, date: '5月15日', weight: '73.6kg', note: '調整營養計畫' },
+  { id: 5, date: '5月20日', weight: '73kg', note: '訓練進度穩定' },
+  { id: 6, date: '5月25日', weight: '72.8kg', note: '提高 HIIT 強度' },
+  { id: 7, date: '6月1日', weight: '72.5kg', note: '肌力成長明顯' },
+  { id: 8, date: '6月5日', weight: '72.2kg', note: '恢復品質進步' },
+  { id: 9, date: '6月10日', weight: '72kg', note: '體組成持續改善' },
+  { id: 10, date: '6月15日', weight: '71.8kg', note: '活動度提升' },
+  { id: 11, date: '6月20日', weight: '71.5kg', note: '減脂持續進行' },
+  { id: 12, date: '6月25日', weight: '71.2kg', note: '訓練穩定性良好' },
+]
+</script>
+
 <template>
-  <section class="max-w-3xl rounded-2xl border border-slate-200 bg-white p-6 shadow-card">
-    <h2 class="text-2xl font-semibold text-slate-900">Kevin 進度紀錄</h2>
-    <div class="mt-6 space-y-3">
-      <div class="rounded-xl bg-slate-50 p-4">
-        <p class="font-semibold text-slate-800">5月1日 | 75kg</p>
-        <p class="mt-1 text-sm text-slate-600">初次評估</p>
-      </div>
-      <div class="rounded-xl bg-slate-50 p-4">
-        <p class="font-semibold text-slate-800">5月10日 | 74kg</p>
-        <p class="mt-1 text-sm text-slate-600">進度良好</p>
-      </div>
-      <div class="rounded-xl bg-slate-50 p-4">
-        <p class="font-semibold text-slate-800">5月20日 | 73kg</p>
-        <p class="mt-1 text-sm text-slate-600">持續訓練中</p>
-      </div>
-    </div>
+  <section class="space-y-4">
+    <h2 class="text-2xl font-semibold text-slate-900">Kevin 兩個月進度紀錄</h2>
+    <DataTable :columns="columns" :rows="records" />
   </section>
 </template>

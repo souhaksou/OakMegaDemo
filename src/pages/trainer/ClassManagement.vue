@@ -12,6 +12,10 @@ const columns = [
 const classRows = ref([
   { id: 1, className: '肌力訓練', trainer: 'Ryan', time: '10:00' },
   { id: 2, className: '瑜珈', trainer: 'Ashley', time: '14:00' },
+  { id: 3, className: 'HIIT', trainer: 'David', time: '19:00' },
+  { id: 4, className: '皮拉提斯', trainer: 'Sophia', time: '09:00' },
+  { id: 5, className: '綜合體能', trainer: 'Jason', time: '16:00' },
+  { id: 6, className: '活動度訓練', trainer: 'Emma', time: '18:00' },
 ])
 
 const editClass = () => alert('已點擊編輯（示範）')

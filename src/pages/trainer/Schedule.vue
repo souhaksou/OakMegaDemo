@@ -5,6 +5,7 @@ import data from '../../data/mockData.json'
 const columns = [
   { key: 'time', label: '時間' },
   { key: 'className', label: '課程' },
+  { key: 'trainer', label: '教練' },
   { key: 'student', label: '學生' },
 ]
 </script>

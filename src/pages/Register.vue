@@ -11,7 +11,7 @@ const form = reactive({
 })
 
 const submitForm = () => {
-  alert('註冊已送出（示範用）')
+  alert('已送出註冊資料（示範）')
 }
 </script>
 
@@ -21,7 +21,7 @@ const submitForm = () => {
     <form class="space-y-4" @submit.prevent="submitForm">
       <FormInput v-model="form.name" label="姓名" placeholder="請輸入會員姓名" />
       <FormInput v-model="form.email" label="電子郵件" type="email" placeholder="請輸入電子郵件" />
-      <FormInput v-model="form.phone" label="電話" placeholder="請輸入電話" />
+      <FormInput v-model="form.phone" label="電話" placeholder="請輸入電話號碼" />
       <FormInput v-model="form.role" label="身份" type="select" :options="['一般會員', 'VIP 會員', '訪客']" />
       <Button type="submit">送出</Button>
     </form>

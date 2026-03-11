@@ -5,7 +5,7 @@ import data from '../data/mockData.json'
 
 <template>
   <section>
-    <h2 class="mb-4 text-2xl font-semibold text-slate-900">健身房活動</h2>
+    <h2 class="mb-4 text-2xl font-semibold text-slate-900">活動專區</h2>
     <div class="grid gap-4 md:grid-cols-2 xl:grid-cols-3">
       <Card v-for="event in data.events" :key="event.id">
         <h3 class="text-lg font-semibold text-slate-900">{{ event.title }}</h3>
