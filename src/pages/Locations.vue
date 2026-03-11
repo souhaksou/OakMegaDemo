@@ -1,16 +1,21 @@
 <script setup>
+import Button from '../components/Button.vue'
+
 const locationGroups = [
   {
     region: '北台灣',
-    cities: ['台北', '新北', '桃園'],
+    slug: 'north',
+    cities: ['台北店', '新北店', '桃園店'],
   },
   {
     region: '中台灣',
-    cities: ['台中', '彰化', '南投'],
+    slug: 'central',
+    cities: ['台中店', '彰化店', '南投店'],
   },
   {
     region: '南台灣',
-    cities: ['台南', '高雄', '屏東'],
+    slug: 'south',
+    cities: ['台南店', '高雄店', '屏東店'],
   },
 ]
 </script>
@@ -34,6 +39,9 @@ const locationGroups = [
             {{ city }}
           </li>
         </ul>
+        <RouterLink :to="`/locations/${group.slug}`" class="mt-4 inline-block">
+          <Button variant="secondary">查看 {{ group.region }} 據點</Button>
+        </RouterLink>
       </article>
     </div>
   </section>

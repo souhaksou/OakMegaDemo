@@ -3,12 +3,14 @@ import DashboardLayout from '../layout/DashboardLayout.vue'
 import Home from '../pages/Home.vue'
 import Brand from '../pages/Brand.vue'
 import Events from '../pages/Events.vue'
+import EventDetail from '../pages/EventDetail.vue'
 import Trainers from '../pages/Trainers.vue'
 import TrainerProfile from '../pages/TrainerProfile.vue'
 import Register from '../pages/Register.vue'
 import VisitBooking from '../pages/VisitBooking.vue'
 import Location from '../pages/Location.vue'
 import Locations from '../pages/Locations.vue'
+import LocationRegion from '../pages/LocationRegion.vue'
 import ClassBooking from '../pages/ClassBooking.vue'
 import TrainerSchedule from '../pages/trainer/Schedule.vue'
 import Students from '../pages/trainer/Students.vue'
@@ -24,12 +26,14 @@ const routes = [
       { path: '', name: 'home', component: Home },
       { path: 'brand', name: 'brand', component: Brand },
       { path: 'events', name: 'events', component: Events },
+      { path: 'events/:id', name: 'event-detail', component: EventDetail },
       { path: 'trainers', name: 'trainers', component: Trainers },
       { path: 'trainers/:id', name: 'trainer-profile', component: TrainerProfile },
       { path: 'register', name: 'register', component: Register },
       { path: 'visit-booking', name: 'visit-booking', component: VisitBooking },
       { path: 'location', name: 'location', component: Location },
       { path: 'locations', name: 'locations', component: Locations },
+      { path: 'locations/:region', name: 'location-region', component: LocationRegion },
       { path: 'class-booking', name: 'class-booking', component: ClassBooking },
       { path: 'trainer/schedule', name: 'trainer-schedule', component: TrainerSchedule },
       { path: 'trainer/students', name: 'trainer-students', component: Students },
