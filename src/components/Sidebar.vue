@@ -14,7 +14,7 @@ const mainMenu = [
   { label: '活動專區', to: '/events' },
   { label: '教練團隊', to: '/trainers' },
   { label: '會員註冊', to: '/register' },
-  { label: '參觀預約', to: '/visit-booking' },
+  { label: '預約參觀', to: '/visit-booking' },
   { label: '據點列表', to: '/locations' },
   { label: '課程預約', to: '/class-booking' },
 ]

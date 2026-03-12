@@ -16,7 +16,7 @@ const pageTitle = computed(() => {
     trainers: '教練團隊',
     'trainer-profile': '教練檔案',
     register: '會員註冊',
-    'visit-booking': '參觀預約',
+    'visit-booking': '預約參觀',
     location: '場館資訊',
     locations: '據點列表',
     'location-region': '地區據點',
