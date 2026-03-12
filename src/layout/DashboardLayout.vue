@@ -9,7 +9,7 @@ const isSidebarOpen = ref(false)
 
 const pageTitle = computed(() => {
   const titles = {
-    home: '首頁',
+    home: '官網首頁',
     brand: '品牌故事',
     events: '活動專區',
     'event-detail': '活動詳情',

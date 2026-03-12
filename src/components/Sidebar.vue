@@ -9,7 +9,7 @@ const props = defineProps({
 defineEmits(['close'])
 
 const mainMenu = [
-  { label: '首頁', to: '/' },
+  { label: '官網首頁', to: '/' },
   { label: '品牌故事', to: '/brand' },
   { label: '活動專區', to: '/events' },
   { label: '教練團隊', to: '/trainers' },
