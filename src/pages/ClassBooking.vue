@@ -71,7 +71,7 @@ onMounted(() => {
 
 <template>
   <section class="space-y-4">
-    <h2 class="text-2xl font-semibold text-slate-900">課程預約</h2>
+    <h2 class="text-2xl font-semibold text-slate-900">預約上課</h2>
     <DataTable :columns="columns" :rows="classRows">
       <template #actions="{ row }">
         <div class="flex gap-2">

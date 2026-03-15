@@ -16,7 +16,7 @@ const mainMenu = [
   { label: '會員註冊', to: '/register' },
   { label: '預約參觀', to: '/visit-booking' },
   { label: '據點列表', to: '/locations' },
-  { label: '課程預約', to: '/class-booking' },
+  { label: '預約上課', to: '/class-booking' },
 ]
 
 const trainerTools = [

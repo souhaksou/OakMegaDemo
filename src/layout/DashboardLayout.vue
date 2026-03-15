@@ -20,7 +20,7 @@ const pageTitle = computed(() => {
     location: '場館資訊',
     locations: '據點列表',
     'location-region': '地區據點',
-    'class-booking': '課程預約',
+    'class-booking': '預約上課',
     'trainer-schedule': '教練課表',
     'trainer-students': '學生名單',
     'trainer-student-record': '學生紀錄',
