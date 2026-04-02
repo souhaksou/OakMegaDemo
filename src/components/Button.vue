@@ -19,13 +19,13 @@ defineProps({
   <button
     :type="type"
     :class="[
-      'rounded-xl px-4 py-2 text-sm font-semibold transition',
+      'rounded-xl px-5 py-2 text-sm font-semibold tracking-wide transition-all duration-200 active:scale-95',
       block ? 'w-full' : '',
       variant === 'primary'
-        ? 'bg-cyan-700 text-white hover:bg-cyan-800'
+        ? 'bg-primary text-white shadow-sm hover:bg-primary/90 hover:shadow'
         : variant === 'danger'
-          ? 'bg-red-600 text-white hover:bg-red-700'
-          : 'border border-slate-300 bg-white text-slate-700 hover:bg-slate-100',
+          ? 'bg-red-600 text-white shadow-sm hover:bg-red-700 hover:shadow'
+          : 'border border-slate-200 bg-white text-slate-700 shadow-sm hover:bg-slate-50 hover:border-slate-300',
     ]"
   >
     <slot />

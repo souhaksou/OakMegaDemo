@@ -29,30 +29,46 @@ const trainerTools = [
 </script>
 
 <template>
-  <div v-if="props.isOpen" class="fixed inset-0 z-30 bg-slate-900/40 md:hidden" @click="$emit('close')" />
+  <div v-if="props.isOpen" class="fixed inset-0 z-30 bg-slate-900/30 backdrop-blur-sm md:hidden" @click="$emit('close')" />
   <aside :class="[
-    'fixed inset-y-0 left-0 z-40 w-72 overflow-y-auto border-r border-slate-200 bg-white p-5 shadow-xl transition-transform md:static md:translate-x-0 md:shadow-none',
+    'fixed inset-y-0 left-0 z-40 flex w-68 flex-col overflow-y-auto border-r border-slate-100 bg-white px-4 py-6 shadow-xl transition-transform duration-300 md:static md:translate-x-0 md:shadow-none',
     props.isOpen ? 'translate-x-0' : '-translate-x-full',
-  ]">
-    <div class="mb-6 rounded-2xl bg-gradient-to-r from-cyan-700 to-cyan-900 p-4 text-white">
-      <p class="text-xs uppercase tracking-wider text-cyan-100">歡迎光臨</p>
-      <h2 class="text-lg font-semibold">SixFit 健身</h2>
+  ]" style="width:17rem">
+
+    <!-- Brand block -->
+    <div class="mb-7 px-2">
+      <div class="flex items-center gap-3">
+        <div class="relative flex h-9 w-9 flex-shrink-0 items-center justify-center rounded-xl bg-primary">
+          <div class="h-3.5 w-3.5 rotate-45 rounded-sm bg-accent"></div>
+        </div>
+        <div>
+          <p class="text-[10px] font-bold uppercase tracking-[0.22em] text-slate-400">Member Portal</p>
+          <h2 class="text-base font-bold leading-tight text-slate-900">SixFit 健身</h2>
+        </div>
+      </div>
+      <div class="mt-4 h-px bg-gradient-to-r from-primary/20 via-accent/15 to-transparent"></div>
     </div>
 
-    <nav class="space-y-1">
+    <!-- Main nav -->
+    <nav class="space-y-0.5">
       <RouterLink v-for="item in mainMenu" :key="item.to" :to="item.to"
-        class="block rounded-lg px-3 py-2 text-sm font-medium text-slate-700 transition hover:bg-slate-100 hover:text-slate-900"
-        active-class="bg-cyan-50 text-cyan-900" @click="$emit('close')">
+        class="group flex items-center rounded-lg border-l-[3px] border-transparent px-3 py-2 text-sm font-medium text-slate-600 transition-all duration-150 hover:bg-slate-50 hover:text-slate-900"
+        exact-active-class="!border-primary bg-sky-50/70 !text-primary font-semibold" @click="$emit('close')">
         {{ item.label }}
       </RouterLink>
     </nav>
 
-    <div class="my-5 border-t border-slate-200 pt-4">
-      <p class="px-3 text-xs font-semibold uppercase tracking-wider text-slate-400">教練工具</p>
-      <nav class="mt-2 space-y-1">
+    <!-- Trainer tools -->
+    <div class="mt-6">
+      <div class="mb-3 flex items-center gap-2 px-2">
+        <div class="h-px flex-1 bg-slate-100"></div>
+        <p class="text-[10px] font-bold uppercase tracking-[0.2em] text-slate-400">教練工具</p>
+        <div class="h-px flex-1 bg-slate-100"></div>
+      </div>
+      <nav class="space-y-0.5">
         <RouterLink v-for="item in trainerTools" :key="item.to" :to="item.to"
-          class="block rounded-lg px-3 py-2 text-sm font-medium text-slate-700 transition hover:bg-slate-100 hover:text-slate-900"
-          active-class="bg-orange-50 text-orange-700" @click="$emit('close')">
+          class="flex items-center rounded-lg border-l-[3px] border-transparent px-3 py-2 text-sm font-medium text-slate-600 transition-all duration-150 hover:bg-slate-50 hover:text-slate-900"
+          exact-active-class="!border-accent bg-orange-50/70 !text-accent font-semibold" @click="$emit('close')">
           {{ item.label }}
         </RouterLink>
       </nav>

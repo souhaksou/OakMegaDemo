@@ -10,19 +10,22 @@ defineEmits(['toggle-sidebar'])
 </script>
 
 <template>
-  <header class="sticky top-0 z-20 border-b border-slate-200/80 bg-white/90 backdrop-blur">
-    <div class="flex items-center justify-between px-4 py-4 md:px-6">
-      <div class="flex items-center gap-3">
-        <button class="rounded-lg border border-slate-300 p-2 text-slate-600 transition hover:bg-slate-100 md:hidden"
+  <header class="sticky top-0 z-20 border-b border-slate-100 bg-white/95 backdrop-blur-md">
+    <div class="flex items-center justify-between px-5 py-3.5 md:px-7">
+      <div class="flex items-center gap-4">
+        <button
+          class="rounded-xl border border-slate-200 bg-slate-50 p-2.5 text-slate-500 transition hover:bg-slate-100 hover:text-slate-700 md:hidden"
           type="button" @click="$emit('toggle-sidebar')">
           ☰
         </button>
         <div>
-          <p class="text-sm font-medium text-slate-500">SixFit 健身</p>
-          <h1 class="text-xl font-semibold text-slate-900">{{ title }}</h1>
+          <p class="text-[11px] font-semibold uppercase tracking-[0.18em] text-slate-400">SixFit 健身</p>
+          <h1 class="text-lg font-semibold leading-tight text-slate-900">{{ title }}</h1>
         </div>
       </div>
-      <div class="rounded-full bg-slate-900 px-3 py-1 text-xs font-semibold text-white">Demo</div>
+      <div class="rounded-full border border-slate-200 bg-slate-50 px-3.5 py-1 text-xs font-semibold tracking-wide text-slate-500">
+        Demo
+      </div>
     </div>
   </header>
 </template>
